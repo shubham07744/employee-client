@@ -45,7 +45,7 @@ const Setting = () => {
                     if(user.role==="admin"){
                         navigate("/admin-dashboard")
                     }else{
-                        navigate("employee-dashboard")
+                        navigate("/employee-dashboard")
                     }
                     setError(" ")
                 }
