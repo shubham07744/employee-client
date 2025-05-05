@@ -39,7 +39,7 @@ const Addsalary = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post(`http://localhost:5000/api/salary/add`, 
+            const response = await axios.post(`https://employee-server-one.vercel.app/api/salary/add`, 
                 salary,
                 {
                 headers:{

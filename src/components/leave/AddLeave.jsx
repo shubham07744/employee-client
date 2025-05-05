@@ -18,7 +18,7 @@ const AddLeave = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault();
         try{
-            const response = await axios.post(`http://localhost:5000/api/leave/add`,
+            const response = await axios.post(`https://employee-server-one.vercel.app/api/leave/add`,
             leave,
             {
                 headers:{

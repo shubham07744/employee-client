@@ -14,7 +14,7 @@ const DepartmentList = () => {
     const confirmDelete = window.confirm("Do you want to delete?");
     if (confirmDelete) {
       try {
-        const response = await axios.delete(`http://localhost:5000/api/department/${id}`, {
+        const response = await axios.delete(`https://employee-server-one.vercel.app/api/department/${id}`, {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }
@@ -33,7 +33,7 @@ const DepartmentList = () => {
     const fetchDepartment = async()=>{  
       setDepLoading(true)
       try{
-        const response = await axios.get('http://localhost:5000/api/department',{
+        const response = await axios.get('https://employee-server-one.vercel.app/api/department',{
           headers:{
             "Authorization":`Bearer ${localStorage.getItem('token')}`
           }
