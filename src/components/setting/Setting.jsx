@@ -44,7 +44,8 @@ const Setting = () => {
                     })
                     if(user.role==="admin"){
                         navigate("/admin-dashboard")
-                    }else{
+                    }
+                    if(user.role==="employee"){
                         navigate("/employee-dashboard")
                     }
                     setError(" ")
